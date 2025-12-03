@@ -1,0 +1,81 @@
+baseURL: http://localhost:1313/
+languageCode: en-us
+title: Glash.dev
+
+theme: ["PaperMod"]
+
+
+params:
+  environment: production
+  title: Glash.dev
+  description: "Personal blog"
+  keywords: ["blog", "personal", "hugo", "static site", "self-hosting", "technology", "programming"]
+  DateFormat: "Jan 2, 2006"
+  showToc: true
+  tocOpen: false
+  enableRobotsTXT: true
+  buildDrafts: false
+  buildFuture: false
+  buildExpired: false
+  enableInlineShortcodes: true
+  enableRobotsTXT: true
+  enableEmoji: true
+  pygmentsUseClasses: true
+  showPostNavLinks: true
+  showReadingTime: true
+  showBreadCrumbs: true
+  disableComments: true
+  mainsections: ["posts"]
+
+
+  homeInfoParams:
+    Title: "Glash.dev"
+    Content: >
+      👋 Welcome to my blog which is based off of Hugo's [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod)
+        - Here I will be sharing thoughts and projects related to technology, self-hosting, and programming.
+        - Any advice or feedback is greatly appreciated!
+        - Links to my social media and GitHub can be found below.
+
+  socialIcons: # optional
+  - name: "GitHub"
+    url: "https://github.com/aglasheen"
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/adamglasheen"
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Posts
+          url: posts/
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+
+caches:
+  images:
+    dir: :cacheDir/images
