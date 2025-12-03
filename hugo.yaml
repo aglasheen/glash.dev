@@ -1,4 +1,4 @@
-baseURL: http://localhost:1313/
+baseURL: https://aglasheen.github.io/glash.dev
 languageCode: en-us
 title: Glash.dev
 
@@ -18,7 +18,6 @@ params:
   buildFuture: false
   buildExpired: false
   enableInlineShortcodes: true
-  enableRobotsTXT: true
   enableEmoji: true
   pygmentsUseClasses: true
   showPostNavLinks: true
