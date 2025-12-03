@@ -28,11 +28,14 @@ params:
 
 
   homeInfoParams:
-    Title: "Glash.dev"
+    Title: "Welcome 👋"
     Content: >
       👋 Welcome to my blog which is based off of Hugo's [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod)
+        
         - Here I will be sharing thoughts and projects related to technology, self-hosting, and programming.
+        
         - Any advice or feedback is greatly appreciated!
+        
         - Links to my social media and GitHub can be found below.
 
   socialIcons: # optional
